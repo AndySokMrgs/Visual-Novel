@@ -1,64 +1,50 @@
-Fri Jun 18 14:53:21 2021
+Mon Jun 21 11:51:56 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
  
 
-Bootstrap to the start of init.init took 0.24s
+Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
-Loader init took 0.04s
-Loading error handling took 0.08s
-Loading script took 0.55s
-Loading save slot metadata. took 0.04s
+Loader init took 0.05s
+Loading error handling took 0.05s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-
-Full traceback:
-  File "game/gui.rpy", line 88, in script
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-  File "renpy/ast.py", line 2207, in execute
-    self.set()
-  File "renpy/ast.py", line 2218, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "renpy/python.py", line 2242, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 88, in <module>
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-NameError: name 'auto' is not defined
-
-While running game code:
-  File "game/gui.rpy", line 88, in script
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-  File "game/gui.rpy", line 88, in <module>
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-NameError: name 'auto' is not defined
+Running init code took 0.16s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Okand\\AppData\\Roaming/RenPy/backups\\Visual Novel':
+Dump and make backups. took 0.28s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.16s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.26s
 
-Full traceback:
-  File "renpy/bootstrap.py", line 326, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 515, in main
-    renpy.game.context().run(node)
-  File "game/gui.rpy", line 88, in script
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-  File "game/gui.rpy", line 88, in script
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-  File "renpy/ast.py", line 2207, in execute
-    self.set()
-  File "renpy/ast.py", line 2218, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "renpy/python.py", line 2242, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 88, in <module>
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-NameError: name 'auto' is not defined
-
-While running game code:
-  File "game/gui.rpy", line 88, in script
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-  File "game/gui.rpy", line 88, in script
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-  File "game/gui.rpy", line 88, in <module>
-    define gui.main_menu_background = im.Scale ('main_menu.png', auto, auto)
-NameError: name 'auto' is not defined
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 620'
+Version: '4.6.0 - Build 26.20.100.7870'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Maximum texture size: 4096x4096
+Total time until interface ready: 2.78564500809s
